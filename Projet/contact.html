@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <span class="title">Library</span>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./signup.html">Sign up</a></li>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="signup">
+        <h1 class="heading-text">Contact Us</h1>
+        <form action="#">
+            <div id="signup-form">
+                <label class="signup-label" for="name"><b>Name</b></label>
+                <input class="signup-input" type="text" placeholder="Enter your Name" name="name" required>
+
+                <label class="signup-label" for="subject"><b>Subject</b></label>
+                <input class="signup-input" type="text" placeholder="Enter Subject" name="subject" required>
+
+                <label class="signup-label" for="message"><b>Message</b></label>
+                <textarea class="signup-input" type="text" placeholder="Message" name="message" required></textarea>
+
+                <div class="signup-buttons">
+                    <button class="signup-button" id="signupbtn" type="submit">Send Message</button>
+                    <button class="signup-button" id="cancelbtn" type="reset">Cancel</button>
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#signupbtn').click(function () {
+            if ($('.signup-input').val().length != 0) {
+                window.alert("Message sent!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

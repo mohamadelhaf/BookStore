@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./home_background.jpg');
+    background-repeat: repeat;
+    background-size: fill;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.title {
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    line-height: 50px;
+    width: 100px;
+}
+
+#home {
+    margin: 0;
+    padding: 0;
+    height: 100vh - 100px;
+}
+
+#signup {
+    margin: 0;
+    padding: 0;
+    height: 100vh - 100px;
+}
+
+#signup-form {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 60px;
+}
+
+.signup-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+.signup-input {
+    display: block;
+    align-self: center;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+.signup-button {
+    align-self: center;
+    border: none;
+    padding: 15px;
+    margin-top: 15px;
+    width: 240px;
+}
+
+.signup-buttons {
+    align-self: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.heading-text {
+    color: white;
+    width: 100vw;
+    text-align: center;
+    align-self: center;
+}
+
+.subheading-text {
+    width: 100vw;
+    color: white;
+    text-align: center;
+    align-self: center;
+}
+
+#signupbtn {
+    background-color: greenyellow;
+}
+
+#signupbtn:hover {
+    background-color: grey;
+}
+
+#cancelbtn:hover {
+    background-color: grey;
+}
+
+#books-section {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65vw;
+    justify-content: center;
+}
+    
+
+.book {
+    margin: 5px;
+    background-color: white;
+    max-width: 20vw;
+    opacity: 0.9;
+}
+
+.book:hover {
+    opacity: 0.7;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book-desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-thumb {
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+.out-of-stock {
+    opacity: 1;
+    background-color: red;
+}
+label{
+    cursor: pointer;
+}
+
+.out-of-stock:hover {
+    opacity: 0.7;
+}
+
+.book-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.book-detail-image {
+    min-width: 100px;
+    max-width: 500px;
+    min-height: 100px;
+    max-height: 500px;
+    margin: 20px;
+}
+
+.book-detail-desc {
+    max-width: 400px;
+    min-width: 200px;
+    font-size: 20px;
+    max-height: 100%;
+    color: white;
+}
+
+.book-detail-price {
+    max-height: 100%;
+    color: white;
+}
+
+.book-detail-available {
+    max-height: 100%;
+    color: white;
+}
+
+#buy-btn {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+#buy-btn:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.about-desc {
+    max-width: 70vw;
+    min-width: 200px;
+    font-size: 20px;
+    max-height: 100%;
+    color: white;
+}
+
+.branch-image {
+    min-width: 100px;
+    max-width: 500px;
+    min-height: 100px;
+    max-height: 500px;
+    margin: 20px;
+}
+.map-image {
+    width: 800px;
+    height: 530px;
+}
+
+@media only screen and (max-width: 600px) {
+    #signup-form {
+        display: block;
+        width: 75vw;
+    }
+    .signup-label {
+        align-self: center;
+        width: 300px;
+    }
+    .signup-input {
+        width: 300px;
+        margin: auto;
+    }
+    .signup-button {
+        width: 100%;
+    }
+    .signup-buttons {
+        display: block;
+        margin: auto;
+        max-width: 300px;
+        margin-top: 40px;
+    }
+    #books-section {
+        width: 75vw;
+    }
+    .book {
+        max-width: 150px;
+        min-width: 50px;
+    }
+}

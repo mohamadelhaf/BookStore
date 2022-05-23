@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <span class="title">Library</span>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./signup.html">Sign up</a></li>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="signup">
+        <h1 class="heading-text">Sign Up</h1>
+        <h4 class="subheading-text">Please fill in this form to create an account.</h4>
+
+
+        <form action="#">
+            <div id="signup-form">
+                <label class="signup-label" for="email"><b>Email</b></label>
+                <input class="signup-input" type="text" placeholder="Enter Email" name="email" required>
+
+                <label class="signup-label" for="psw"><b>Password</b></label>
+                <input class="signup-input" type="password" placeholder="Enter Password" name="psw" required>
+
+                <label class="signup-label" for="psw-repeat"><b>Repeat Password</b></label>
+                <input class="signup-input" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <div class="signup-buttons">
+                    <button class="signup-button" id="signupbtn" type="submit">Sign Up</button>
+                    <button class="signup-button" id="cancelbtn" type="reset">Cancel</button>
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script>
+            $('#signupbtn').click(function () {
+                if ($('.signup-input').val().length != 0) {
+                    window.alert("Registered Successfully!");
+                }
+            });
+    </script>
+
+</body>
+
+</html>
